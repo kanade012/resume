@@ -27,6 +27,9 @@ jobs:
       - name: Add .nojekyll
         run: echo > build/web/.nojekyll
 
+      - name: Add CNAME file
+        run: echo 'youngha.buzz' > build/web/CNAME # 여기에 사용할 커스텀 도메인 입력
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
