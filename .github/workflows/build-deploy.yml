@@ -31,7 +31,7 @@ jobs:
         run: echo 'youngha.buzz' > build/web/CNAME # 여기에 사용할 커스텀 도메인 입력
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.MY_SECRET_KEY_NAME }} # repository에서 사용할 시크릿 키 이름
           publish_dir: build/web
