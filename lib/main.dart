@@ -92,7 +92,7 @@ class MyApp extends StatelessWidget {
                       children: [
                         banner(title: "Velog", link: 'https://velog.io/@wkddudgk4869/posts',),
                         SizedBox(width: ratio.width * 7,),
-                        banner(title: "Resume", link: '',),
+                        banner(title: "Resume", link: 'https://drive.google.com/file/d/1eqMiLd1eih281o-cDUbc1sGImoJCFTe6/view?usp=drive_link',),
                       ],
                     ),
                   ],
