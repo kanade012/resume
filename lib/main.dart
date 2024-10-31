@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: ResumeColors.background,
-        /// 중앙 정렬을 위해 Row로 감싸 양 옆에 SizedBox를 주고 spaceBeteen을 주었습니다.
+        /// 중앙 정렬을 위해 Row로 감싸 양 옆에 SizedBox를 주고 spaceBetween을 주었습니다.
         body: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -53,12 +53,14 @@ class MyApp extends StatelessWidget {
                           "주로 모바일 어플리케이션 엔지니어링을 하며 인공지능과 PM 업무에도 흥미가 있습니다.",
                           style: KR.subtitle,
                         ),
+                        ///이메일
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Icon(
                               Icons.email_outlined,
                               color: ResumeColors.subtitlecolor,
+                              size: ratio.width * 24,
                             ),
                             SizedBox(
                               width: ratio.width * 5,
@@ -79,6 +81,9 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
                 /// 하단 배너에 관련된 Row
+                SizedBox(
+                  height: ratio.height * 10,
+                ),
                 Row(
                   children: [
                     Column(

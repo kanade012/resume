@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:resume/config/color.dart';
 
+import '../main.dart';
+
 class KR {
   KR._();
 
   static TextStyle title = TextStyle(
-    fontSize: 36,
+    fontSize: ratio.width * 36,
     color: ResumeColors.titlecolor
   );
   static TextStyle subtitle = TextStyle(
-      fontSize: 12,
+      fontSize: ratio.width * 12,
       color: ResumeColors.subtitlecolor
   );
   static TextStyle banner = TextStyle(
-      fontSize: 20,
+      fontSize: ratio.width * 20,
       color: ResumeColors.bannertitlecolor
   );
 }

@@ -11,14 +11,20 @@ class banner extends StatelessWidget {
   final String link;
 
   const banner({super.key, required this.title, required this.link});
-
+  bool isMobile(BuildContext context) {
+    if (MediaQuery.of(context).size.width < MediaQuery.of(context).size.height) {
+      return true;
+    } else {
+      return false;
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: ()=>html.window.open('$link', '_blank'),
       child: Container(
         width: ratio.width * 180,
-        height: ratio.height * 40,
+        height: isMobile(context) ? ratio.height * 20 : ratio.height * 40,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30),
           color: ResumeColors.bannercolor,
