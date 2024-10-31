@@ -29,7 +29,7 @@ class banner extends StatelessWidget {
           children: [
             Image.asset("assets/images/$title.png", width: ratio.width * 24, height: ratio.height * 24,),
             Text("$title", style: KR.banner,),
-            Image.asset("assets/images/arrow.png")
+            Image.asset("assets/images/arrow.png", width: ratio.width * 24, height: ratio.height * 24,)
           ],
         ),
       ),
