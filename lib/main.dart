@@ -1,11 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:resume/page/mob_page.dart';
 import 'package:resume/page/pc_page.dart';
 
 late Size ratio;
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await loadCustomFonts();
   runApp(const MyApp());
+}
+
+Future<void> loadCustomFonts() async {
+  final fontLoader = FontLoader('NotoSans');
+
+  final boldData = await rootBundle.load('assets/fonts/NotoSans-Bold.woff');
+  fontLoader.addFont(Future.value(ByteData.view(boldData.buffer)));
+
+  final regularData = await rootBundle.load('assets/fonts/NotoSans-Regular.woff');
+  fontLoader.addFont(Future.value(ByteData.view(regularData.buffer)));
+
+  await fontLoader.load();
 }
 
 bool isMobile(BuildContext context) {

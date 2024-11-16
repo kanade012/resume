@@ -8,28 +8,39 @@ class KR {
 
   static TextStyle title = TextStyle(
     fontSize: ratio.width * 36,
-    color: ResumeColors.titlecolor
+    color: ResumeColors.titlecolor,
+    fontFamily: 'NotoSans', 
   );
+
   static TextStyle mobtitle = TextStyle(
-      fontSize: ratio.width * 72,
-      color: ResumeColors.titlecolor
+    fontSize: ratio.width * 72,
+    color: ResumeColors.titlecolor,
+    fontFamily: 'NotoSans', 
   );
+
   static TextStyle subtitle = TextStyle(
-      fontSize: ratio.width * 12,
-      color: ResumeColors.subtitlecolor
+    fontSize: ratio.width * 12,
+    color: ResumeColors.subtitlecolor,
+    fontFamily: 'NotoSans', 
   );
+
   static TextStyle mobsubtitle = TextStyle(
-      fontSize: ratio.width * 28,
-      color: ResumeColors.subtitlecolor
+    fontSize: ratio.width * 28,
+    color: ResumeColors.subtitlecolor,
+    fontFamily: 'NotoSans', 
   );
+
   static TextStyle banner = TextStyle(
-      fontSize: ratio.width * 20,
-      color: ResumeColors.bannertitlecolor
+    fontSize: ratio.width * 20,
+    color: ResumeColors.bannertitlecolor,
+    fontFamily: 'NotoSans', 
   );
+
   static TextStyle mobbanner = TextStyle(
-      fontSize: ratio.width * 40,
-      fontWeight: FontWeight.bold,
-      color: ResumeColors.bannertitlecolor
+    fontSize: ratio.width * 40,
+    fontWeight: FontWeight.bold,
+    color: ResumeColors.bannertitlecolor,
+    fontFamily: 'NotoSans', 
   );
 }
 //
